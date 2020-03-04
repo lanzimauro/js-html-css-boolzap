@@ -39,8 +39,7 @@
 }
 
 .top-left {
-    position: fixed;
-    width: 28%;
+    width: 100%;
     height: 180px;
 }
 
@@ -131,8 +130,7 @@
 }
 
 .lista-chat {
-    height: 600px;
-    padding-top: 180px;
+    height: 420px;
     display: flex;
     flex-direction: column;
     overflow: scroll;
@@ -195,6 +193,7 @@
     justify-content: space-between;
     align-items: center;
     padding-right: 15px;
+
 }
 
 .nav-right .icons i {
@@ -227,7 +226,9 @@
 
 .corpo-chat {
     height: 450px;
-    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    padding: 20px;
+    overflow-y: auto;
 }
 
 .input-chat-attiva {
@@ -275,4 +276,23 @@
     font-size: 35px;
     padding: 15px;
     color: #767e81;
+}
+
+
+.inviato {
+    position: relative;
+    left: 500px;
+    background-color: #dafac2;
+    border-radius: 5px;
+    height: 40px;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.ricevuto {
+    background-color: #ffffff;
+    border-radius: 5px;
+    height: 40px;
+    width: 150px;
+    margin-bottom: 20px;
 }
