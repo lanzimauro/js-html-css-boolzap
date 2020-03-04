@@ -8,6 +8,7 @@
 
 .container {
     height: 100vh;
+    overflow: hidden;
 }
 
 .container .fascia-verde {
@@ -24,23 +25,23 @@
 /*INIZIO SCHERMATA CENTRALE*/
 .corpo-centrale {
     width: 80%;
-    height: 93%;
-    background-color: red;
-    position: absolute;
+    height: 600px;
+    position: relative;
     left: 10%;
-    bottom: 3%;
+    bottom: 7%;
 }
 
 /*COLONNA DI SINISTRA*/
 .colonna-contatti {
-    height: 100%;
+    float: left;
+    height: 600px;
     width: 35%;
-    background-color: blue;
 }
 
 .top-left {
+    position: fixed;
+    width: 28%;
     height: 180px;
-    background-color: green;
 }
 
 .nav-left {
@@ -50,11 +51,12 @@
     justify-content: space-between;
     align-items: center;
     padding-right: 15px;
+    border-right: 1px solid gray;
 }
 
 .placeholder {
     width: 25%;
-    height: 75px;
+    height: 70px;
     padding: 5px;
 }
 
@@ -110,10 +112,167 @@
     background-color: #ededed;
     display: flex;
     align-items: center;
-    justify-content: center;
+    padding-right: 10px;
 }
 
 #search {
-    width: 90%;
+    width: 95%;
+    height: 30px;
+    padding-left: 55px;
+    border-radius: 2px;
+    border: none;
+}
+
+.search-left i {
+    position: relative;
+    left: 10%;
+    font-weight: bold;
+    color: #bababa;
+}
+
+.lista-chat {
+    height: 600px;
+    padding-top: 180px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.chat {
+    height: 70px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
     padding-left: 20px;
+    border-bottom: 1px solid gray;
+}
+/*FINE LISTA CHAT*/
+
+/*COLONNA DESTRA*/
+
+
+.user {
+    width: 25%;
+    height: 70px;
+    padding: 5px;
+}
+
+.avatar {
+    height: 55px;
+}
+
+.testo-chat h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.testo-chat p {
+    font-size: 12px;
+    color: #bababa;
+}
+
+.time {
+    font-size: 13px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+
+
+.colonna-destra {
+    height: 600px;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fchiaveorgonica.altervista.org%2Fwp-content%2Fuploads%2F2015%2F10%2Fwhatsapp-wallpaper.jpg&f=1&nofb=1);
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+    width: 65%;
+}
+
+.nav-right {
+    height: 70px;
+    background-color: #ededed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.nav-right .icons i {
+    font-size: 25px;
+    margin: auto 10px;
+    color: #bababa;
+}
+
+.nav-user {
+    display: flex;
+    align-items: center;
+}
+
+.placeholder-right {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 5px;
+}
+
+.placeholder-right img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.chat-attiva {
+    margin-left: 20px;
+}
+
+.corpo-chat {
+    height: 450px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.input-chat-attiva {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: #f5f0ed;
+}
+
+.emoticon {
+    height: 100%;
+    width: 85px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.emoticon i {
+    font-size: 35px;
+    padding: 15px;
+    color: #767e81;
+}
+
+.input {
+    height: 100%;
+    width: 540px;
+    display: flex;
+    align-items: center;
+}
+
+.input input {
+    width: 540px;
+    height: 50px;
+    border: none;
+    padding: 15px;
+}
+
+.tasto {
+    height: 100%;
+    width: 85px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.tasto i {
+    font-size: 35px;
+    padding: 15px;
+    color: #767e81;
 }
